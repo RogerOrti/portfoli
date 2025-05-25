@@ -1,71 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Portfoli</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <div class="nav-item">
-            <img src="https://img.icons8.com/?size=24&id=1iF9PyJ2Thzo&format=png&color=FFFFFF" class="icon" alt="Home">
-            <span><a href="#sobremi">Sobre mi</a></span>
+      <div class="nav-item">
+        <img
+          src="https://img.icons8.com/?size=24&id=1iF9PyJ2Thzo&format=png&color=FFFFFF"
+          class="icon"
+          alt="Home"
+        />
+        <span><a href="#sobremi">Sobre mi</a></span>
+      </div>
+      <div class="nav-item">
+        <img
+          src="https://img.icons8.com/?size=24&id=79387&format=png&color=FFFFFF"
+          class="icon"
+          alt="Education"
+        />
+        <span><a href="#estudis">Estudis</a></span>
+      </div>
+      <div class="nav-item">
+        <img src="media/gitLogo.png" class="icon" alt="Contact" />
+        <span><a href="#projectes">Projectes</a></span>
+      </div>
+      <div class="nav-item">
+        <img
+          src="https://img.icons8.com/?size=24&id=M1HUQOE9lLoG&format=png&color=FFFFFF"
+          class="icon"
+          alt="Experience"
+        />
+        <span><a href="#experiencia">Experiència</a></span>
+      </div>
+    </div>
+    <main>
+      <div class="titol-central">
+        <h1>ROGER ORTÍ</h1>
+        <div class="fletxes" onclick="scrollToSobreMi()">
+          <span>▼</span>
+          <span>▼</span>
         </div>
-        <div class="nav-item">
-            <img src="https://img.icons8.com/?size=24&id=79387&format=png&color=FFFFFF" class="icon" alt="Education">
-            <span>Estudis</span>
+      </div>
+      <div class="sobre-mi-section" id="sobremi">
+        <h2>Sobre mi</h2>
+        <p class="sobre-mi-text">
+          Molt bones!Sóc en Roger Ortí, una persona molt interessada en el món del back-end i en l'anàlisi de dades. Sempre busco noves maneres de crear, mantenir i gestionar diferents eines per tal de tenir una visió clara de com es poden manipular diversos tipus de dades. He après a utilitzar diversos frameworks com Laravel i Symfony, així com frameworks de front-end com, per exemple, Vue.
+        </p>
+
+
+        <h2>Soft skills</h2>
+        <ul class="soft-skills">
+          <li><span>🗣️</span> Comunicació</li>
+          <li><span>🤝</span> Cooperació</li>
+          <li><span>📚</span> Aprenentatge constant</li>
+          <li><span>🎯</span> Compromís i responsabilitat</li>
+        </ul>
+      </div>
+
+
+      <div class="container" id="estudis">
+        <h2>Estudis</h2>
+
+        <div class="estudi">
+          <img src="media/cep.png" alt="CEP" />
+          <p>Grau superior Desenvolupament d'Aplicacions Web</p>
+          <p>2022-2025</p>
         </div>
-        <div class="nav-item">
-            <img src="media/gitLogo.png" class="icon" alt="Contact">
-            <span>Projectes</span>
+
+        <div class="estudi">
+          <img src="media/jpescola.png" alt="JP Escola" />
+          <p>Grau mitjà Sistemes Microinformàtics i Xarxes Locals</p>
+          <p>2019-2022</p>
         </div>
-        <div class="nav-item">
-            <img src="https://img.icons8.com/?size=24&id=M1HUQOE9lLoG&format=png&color=FFFFFF" class="icon"
-                alt="Experience">
-            <span><a href="">Experiencia</a></span>
+      </div>
+
+    <div class="container" id="experiencia">
+      <h2>Experiència</h2>
+
+      <div class="experiencia-item">
+        <img src="media/fast_byte_sl_logo.jpg" alt="fast_byte" />
+        <div class="text">
+          <p><strong>Full-stack Developer, pràctiques</strong></p>
+          <p>2024-2025</p>
         </div>
+      </div>
+
+      <div class="experiencia-item">
+        <img src="media/fast_byte_sl_logo.jpg" alt="fast_byte" />
+        <div class="text">
+          <p><strong>Tècnic informàtic, pràctiques</strong></p>
+          <p>2022-2022</p>
+        </div>
+      </div>
     </div>
 
-    <div>
-        <h1>
-            ROGER ORTÍ
-        </h1>
-    </div>
 
+      <div class="container" id="projectes">
+        <h2>Projectes</h2>
 
-    <div id="sobremi">
-        <h1>Sobre mi</h1>
-        <div>
-            <p>
+        <a
+          href="https://github.com/RogerOrti/sing_drink"
+          target="_blank"
+          class="card-link"
+        >
+          <div class="card">
+            <img src="media/singdrink.PNG" alt="Sing & Drink" />
+            <div class="container-card">
+              <h4><b>Sing & Drink</b></h4>
+              <p>Laravel - Vue</p>
+            </div>
+          </div>
+        </a>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed orci vehicula, placerat massa vitae,
-                vehicula orci. Nulla sollicitudin viverra lorem, sed sollicitudin mi gravida vitae. Nulla feugiat tempor
-                convallis. Ut quis pulvinar mauris. Duis pulvinar hendrerit mi, a feugiat metus commodo sed. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Donec vitae sapien sit amet ex pharetra pharetra. Maecenas
-                nibh justo, efficitur et nibh at, semper commodo urna. Suspendisse potenti. Curabitur placerat nec urna
-                vitae condimentum. Quisque eget magna varius, semper mauris in, fermentum nisi. </p>
-        </div>
-    </div>
-    <div>
-        <h1>Estudis</h1>
-        <div>
+        <a
+          href="https://github.com/jorditus99/cient-fiks"
+          target="_blank"
+          class="card-link"
+        >
+          <div class="card">
+            <img src="media/cientifiks.PNG" alt="Cientifiks" />
+            <div class="container-card">
+              <h4><b>Cientifiks</b></h4>
+              <p>Javascript - PHP</p>
+            </div>
+          </div>
+        </a>
 
-        </div>
-    </div>
-    <div>
-        <h1>Experiència</h1>
-    </div>
-
-    <div>
-        <h1>Projectes</h1>
-    </div>
-
-
-
-
-</body>
-
+        <a
+          href="https://github.com/RogerOrti/eit_intermodular"
+          target="_blank"
+          class="card-link"
+        >
+          <div class="card">
+            <img src="media/eit.PNG" alt="Eina gestió projectes" />
+            <div class="container-card">
+              <h4><b>Eina gestió projectes</b></h4>
+              <p>Laravel - Vue</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+  </body>
 </html>
+<script src="scripts/main.js"></script>
